@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Poem Generator</title>
   </head>
@@ -17,12 +19,14 @@
           autofocus
           required
         />
-        <input class="generate-button" type="submit" value="Generate" />
+        <input
+          id="generate-button"
+          class="generate-button"
+          type="submit"
+          value="Generate"
+        />
       </form>
-      <div class="poem-container">
-        <p>Poem will appear here</p>
-        <p>Poem will appear here</p>
-      </div>
+      <div id="poem-container" class="poem-container"></div>
       <footer>
         This page was coded by
         <a href="https://www.codewithiza.com" target="_blank">Izabela</a> and
