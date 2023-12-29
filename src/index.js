@@ -1,8 +1,8 @@
 const button = document.querySelector("#generate-button");
 const poem = document.querySelector("#poem-container");
-
 const translateButton = document.querySelector("#translate-button");
 button.addEventListener("click", provideAnswer);
+translateButton.addEventListener("click", translatePoem);
 
 function provideAnswer(event) {
   event.preventDefault();
@@ -31,7 +31,6 @@ function provideAnswer(event) {
       console.error("Error fetching a poem:", error);
     });
 }
-translateButton.addEventListener("click", translatePoem);
 
 function translatePoem(event) {
   event.preventDefault();
