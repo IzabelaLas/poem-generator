@@ -67,7 +67,39 @@ footer {
   border-left: 10px solid #e6b9de;
 }
 
+.hidden {
+  display: none;
+}
+
 a {
   color: #e6b9de;
   text-decoration: none;
+}
+
+strong {
+  color: #e6b9de;
+}
+
+.translated-poem-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+  border-right: 10px solid #e6b9de;
+}
+
+.translate-button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.translate-button:hover {
+  background-color: #e6b9de;
+  cursor: pointer;
 }
